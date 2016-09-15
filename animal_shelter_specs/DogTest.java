@@ -16,4 +16,9 @@ public class DogTest {
     assertEquals( "Archie", dog.getName());
   }
 
+  @Test
+  public void hasHabitat() {
+    assertEquals(HabitatType.OUTDOOR, dog.getHabitat());
+  }
+
 }
