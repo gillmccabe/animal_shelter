@@ -30,8 +30,16 @@ public class Enclosure {
     this.habitat = newHabitat;
   }
 
+  public int getCount(){
+      return animals.size();
+    }
+
   public ArrayList<Animal> getAnimals(){
     return this.animals;
+  }
+
+  public void addAnimal(Animal animal){
+    animals.add(animal);
   }
 
 }

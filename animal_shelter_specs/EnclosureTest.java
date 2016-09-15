@@ -26,4 +26,16 @@ public class EnclosureTest{
     assertEquals(HabitatType.INDOOR, enclosure.getHabitat());
   }
 
+  @Test
+  public void enclosureStartsEmpty(){
+    assertEquals(0, enclosure.getCount());
+  }
+
+  @Test
+  public void canAddAnimal(){
+    enclosure.addAnimal(dog);
+    enclosure.addAnimal(cat);
+    assertEquals(2, enclosure.getCount());
+  }
+
 }
