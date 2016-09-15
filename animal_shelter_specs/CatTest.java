@@ -9,12 +9,17 @@ public class CatTest {
 
   @Before
   public void before() {
-    cat = new Cat("Poppy");
+    cat = new Cat("Poppy", GenderType.FEMALE);
   }
 
   @Test
   public void hasName() {
     assertEquals("Poppy", cat.getName());
+  }
+
+  @Test
+  public void hasGender() {
+    assertEquals(GenderType.FEMALE, cat.getGender());
   }
 
   @Test

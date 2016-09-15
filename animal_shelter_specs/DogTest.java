@@ -9,12 +9,17 @@ public class DogTest {
 
   @Before
   public void before() {
-    dog = new Dog("Archie");
+    dog = new Dog("Archie", GenderType.MALE);
   }
 
   @Test
   public void hasName() {
     assertEquals("Archie", dog.getName());
+  }
+
+  @Test
+  public void hasGender() {
+    assertEquals(GenderType.MALE, dog.getGender());
   }
 
   @Test
@@ -30,7 +35,8 @@ public class DogTest {
   @Test
   public void canEatFood() {
     dog.eat(kibble);
-    assertEquals(1, dog.foodCount());
+    dog.eat(kibble);
+    assertEquals(2, dog.foodCount());
   }
 
 }

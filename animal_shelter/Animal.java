@@ -5,11 +5,13 @@ import java.util.*;
 public abstract class Animal {
 
   private String name;
+  private GenderType gender;
   protected HabitatType habitat;
   private ArrayList<Edible> belly;
 
-  public Animal(String name){
+  public Animal(String name, GenderType gender){
     this.name = name;
+    this.gender = gender;
     this.belly = new ArrayList<Edible>();
   }
 
@@ -19,6 +21,14 @@ public abstract class Animal {
 
   public void setName(String newName){
     this.name = newName;
+  }
+
+  public GenderType getGender(){
+    return this.gender;
+  }
+
+  public void setGender(GenderType newGender){
+    this.gender = newGender;
   }
 
   public HabitatType getHabitat(){
