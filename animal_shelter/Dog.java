@@ -1,6 +1,5 @@
 package animal_shelter;
 import java.util.*;
-import behaviours.*;
 
 public class Dog extends Animal {
 

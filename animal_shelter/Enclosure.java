@@ -1,6 +1,5 @@
 package animal_shelter;
 import java.util.*;
-import behaviours.*;
 
 public class Enclosure {
 
@@ -20,7 +19,7 @@ public class Enclosure {
   }
 
   public void setCapacity(int newCapacity){
-    this.name = newCapacity;
+    this.capacity = newCapacity;
   }
 
   public HabitatType getHabitat(){
@@ -28,7 +27,7 @@ public class Enclosure {
   }
 
   public void setHabitat(HabitatType newHabitat){
-    this.name = newHabitat;
+    this.habitat = newHabitat;
   }
 
 }

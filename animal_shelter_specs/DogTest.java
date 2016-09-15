@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+import org.junit.*;
+import animal_shelter.*;
+
+public class DogTest {
+
+  Dog dog;
+
+  @Before
+  public void before() {
+    dog = new Dog("Archie");
+  }
+
+  @Test
+  public void hasName() {
+    assertEquals( "Archie", dog.getName());
+  }
+
+}
