@@ -30,4 +30,8 @@ public class Enclosure {
     this.habitat = newHabitat;
   }
 
+  public ArrayList<Animal> getAnimals(){
+    return this.animals;
+  }
+
 }
