@@ -21,4 +21,9 @@ public class DogTest {
     assertEquals(HabitatType.OUTDOOR, dog.getHabitat());
   }
 
+  @Test
+   public void bellyStartsEmpty() {
+     assertEquals( 0, dog.foodCount());
+   }
+
 }

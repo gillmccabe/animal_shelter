@@ -1,13 +1,16 @@
 package animal_shelter;
+import behaviours.*;
 import java.util.*;
 
 public abstract class Animal {
 
   private String name;
   protected HabitatType habitat;
+  private ArrayList<Edible> belly;
 
   public Animal(String name){
     this.name = name;
+    this.belly = new ArrayList<Edible>();
   }
 
   public String getName(){
@@ -25,6 +28,10 @@ public abstract class Animal {
   public void setHabitat(HabitatType newHabitat){
     this.habitat = newHabitat;
   }
+
+  public int foodCount() {
+    return belly.size();
+    }
 
 
 }
