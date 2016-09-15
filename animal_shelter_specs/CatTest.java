@@ -14,7 +14,7 @@ public class CatTest {
 
   @Test
   public void hasName() {
-    assertEquals( "Poppy", cat.getName());
+    assertEquals("Poppy", cat.getName());
   }
 
   @Test
@@ -24,13 +24,13 @@ public class CatTest {
 
   @Test
   public void bellyStartsEmpty() {
-    assertEquals( 0, cat.foodCount());
+    assertEquals(0, cat.foodCount());
   }
 
   @Test
   public void canEatFood() {
     cat.eat(kibble);
-    assertEquals( 1, cat.foodCount() );
+    assertEquals(1, cat.foodCount());
   }
 
 }

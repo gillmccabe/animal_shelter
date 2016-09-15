@@ -14,23 +14,23 @@ public class DogTest {
 
   @Test
   public void hasName() {
-    assertEquals( "Archie", dog.getName());
+    assertEquals("Archie", dog.getName());
   }
 
   @Test
   public void hasHabitat() {
-    assertEquals(HabitatType.OUTDOOR, dog.getHabitat());
+    assertEquals(HabitatType.INDOOR, dog.getHabitat());
   }
 
   @Test
   public void bellyStartsEmpty() {
-    assertEquals( 0, dog.foodCount());
+    assertEquals(0, dog.foodCount());
   }
 
   @Test
   public void canEatFood() {
     dog.eat(kibble);
-    assertEquals( 1, dog.foodCount() );
+    assertEquals(1, dog.foodCount());
   }
 
 }

@@ -6,7 +6,7 @@ public class Dog extends Animal {
 
   public Dog(String name) {
     super(name);
-    this.habitat = HabitatType.OUTDOOR;
+    this.habitat = HabitatType.INDOOR;
   }
 
 }
