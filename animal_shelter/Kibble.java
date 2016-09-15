@@ -1,10 +1,10 @@
 package animal_shelter;
 import behaviours.*;
 
-public class PedigreeChum implements Edible {
+public class Kibble implements Edible {
   
   public String checkFood() {
-    return "Pedigree Chum";
+    return "Kibble";
   }
 
 }

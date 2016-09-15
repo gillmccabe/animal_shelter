@@ -33,5 +33,9 @@ public abstract class Animal {
     return belly.size();
     }
 
+  public void eat(Edible food) {
+      belly.add(food);
+    }
+
 
 }

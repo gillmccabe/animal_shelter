@@ -5,6 +5,7 @@ import animal_shelter.*;
 public class CatTest {
 
   Cat cat;
+  Kibble kibble;
 
   @Before
   public void before() {
@@ -22,8 +23,14 @@ public class CatTest {
   }
 
   @Test
-   public void bellyStartsEmpty() {
-     assertEquals( 0, cat.foodCount());
-   }
+  public void bellyStartsEmpty() {
+    assertEquals( 0, cat.foodCount());
+  }
+
+  @Test
+  public void canEatFood() {
+    cat.eat(kibble);
+    assertEquals( 1, cat.foodCount() );
+  }
 
 }
