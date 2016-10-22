@@ -1,7 +1,7 @@
 # Animal Shelter
 
 
-Java Project - OO Modelling and Design Practice
+Java - OO Modelling and Design Practice
 
 
 ## MVP
